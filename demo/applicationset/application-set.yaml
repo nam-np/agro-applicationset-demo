@@ -11,7 +11,7 @@ spec:
       revision: HEAD
       directories:
       # path to the directory that includes directories to read as variables
-        - path: demo/helm/env/*
+        - path: demo/helm/service/*
   template:
     metadata:
       # basename is the name of the directory not the full path
@@ -26,7 +26,7 @@ spec:
         path: "{{path[0]}}/{{path[1]}}"
         helm:
           valueFiles:
-            - "env/{{path.basename}}/values.yaml"
+            - "service/{{path.basename}}/values.yaml"
       destination:
         server: https://kubernetes.default.svc
         # different namespaces named after the directories names to be used as destinations

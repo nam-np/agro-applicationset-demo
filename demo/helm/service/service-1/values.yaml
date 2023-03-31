@@ -43,7 +43,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: dev.namnp.com
+    - host: svc1.namnp.com
       paths:
         - path: /
           pathType: ImplementationSpecific
