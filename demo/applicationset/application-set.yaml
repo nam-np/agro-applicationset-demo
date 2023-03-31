@@ -13,6 +13,15 @@ spec:
       files:
       # path to the directory that includes directories to read as variables
         - path: demo/helm/env/dev/values.yaml
+  - git:
+    # git repository to get the variables from
+    repoURL: https://github.com/nam-np/agro-applicationset-demo.git
+    # branch used to get the variables from 
+    revision: HEAD
+    # directories:
+    files:
+    # path to the directory that includes directories to read as variables
+      - path: demo/helm/env/test/values.yaml
   template:
     metadata:
       # basename is the name of the directory not the full path
