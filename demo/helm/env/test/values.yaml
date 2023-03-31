@@ -9,7 +9,7 @@ image:
   tag: "latest"
 # imagePullSecrets:
 #   - name: gitlab-registry-credentials
-nameOverride: ""
+nameOverride: "service-1"
 fullnameOverride: ""
 serviceAccount:
   # Specifies whether a service account should be created
